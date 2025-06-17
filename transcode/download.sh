@@ -5,5 +5,6 @@ project_dir="/home/share/zc/code/SS_remote"
 # 切换到项目目录
 cd $project_dir
 # 拉取最新更新
+# test
 git pull origin main
 echo "项目更新完成！"
