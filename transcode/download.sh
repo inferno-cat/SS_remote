@@ -1,10 +1,14 @@
 #!/bin/bash
-# 该脚本用于一键获取 GitHub 项目更新到服务器本地
-# 设置项目目录路径，请根据实际情况修改
+# 一键拉取 GitHub 项目更新到本地
+
 project_dir="/home/share/zc/code/SS_remote"
-# 切换到项目目录
-cd $project_dir
-# 拉取最新更新
-# test
+
+cd $project_dir || { echo "目录不存在：$project_dir"; exit 1; }
+
+# 放弃本地未提交的更改
+git reset --hard HEAD
+
+# 拉取远程 main 分支
 git pull origin main
+
 echo "项目更新完成！"
