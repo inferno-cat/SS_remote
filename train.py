@@ -38,7 +38,6 @@ target_transforms = {
     ])
 }
 
-
 # 自定义数据集类
 class VOCSegmentationCustom(VOCSegmentation):
     def __init__(self, root, year, image_set, transform=None, target_transform=None):
