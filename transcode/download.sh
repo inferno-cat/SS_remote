@@ -11,4 +11,6 @@ git reset --hard HEAD
 # 拉取远程 main 分支
 git pull origin main
 
+#test
+
 echo "项目更新完成！"
